@@ -46,7 +46,7 @@ jobs:
         username: ${{ secrets.EC2_USER }}
         port: 22 # ${{ secrets.PORT }}
         key: ${{ secrets.EC2_KEY }}
-        source: "docker-compose.yml"
+        source: "compose.yml"
         target: /home/admin
     # 2
     - name: script deploy docker services 
